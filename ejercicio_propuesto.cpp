@@ -54,7 +54,7 @@ public:
             cant_alumnos++;
         }
     }
-        void ordenarPorPromedio() {
+        void ordenarPromedio() {
             for (int i = 0; i < cantidad - 1; i++) {
                 for (int j = i + 1; j < cantidad; j++) {
                     if (alumno1[j] < alumno1[i]) {
@@ -103,7 +103,7 @@ int main(){
     grupo.agregarAlumno(*al3);
     grupo.agregarAlumno(*al4);
     grupo.agregarAlumno(*al5);
-    grupo.ordenarPorPromedio();
+    grupo.ordenarPromedio();
     cout << grupo<<endl;
     cout << "Promedio de los promedios: " << grupo.promedioGrupo() << endl;
     cout << "Mejor promedio: " << grupo.mejorPromedio() << endl;
